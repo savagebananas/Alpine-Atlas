@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.Universal;
+using UnityEngine.SceneManagement;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -35,6 +36,6 @@ public class GameManager : MonoBehaviour
             canChangeDay = true;
 
         time += Time.deltaTime;
-        light.GetComponent<Light2D>().color = lightColor.Evaluate(time * 0.002f);
+        light.GetComponent<UnityEngine.Rendering.Universal.Light2D>().color = lightColor.Evaluate(time * 0.002f);
     }
 }

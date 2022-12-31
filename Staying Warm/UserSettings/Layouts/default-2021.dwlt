@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1037
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 175067
+  controlID: 15982
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 175097
+  controlID: 15989
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -200,7 +200,7 @@ MonoBehaviour:
   - {fileID: 18}
   - {fileID: 19}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 2
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 175068
+  controlID: 16061
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,8 +245,8 @@ MonoBehaviour:
     y: 0
     width: 351
     height: 434
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -303,7 +303,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 175121
+  controlID: 15983
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -394,7 +394,7 @@ MonoBehaviour:
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
-  m_EnterPlayModeBehavior: 1
+  m_EnterPlayModeBehavior: 0
   m_UseMipMap: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
@@ -695,9 +695,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 423.5, y: 238.5, z: 0}
+    m_Target: {x: 4.9187207, y: -21.450348, z: -1.1090852}
     speed: 2
-    m_Value: {x: 423.5, y: 238.5, z: 0}
+    m_Value: {x: 4.501193, y: -23.837347, z: -1.0759193}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -748,9 +748,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 252.32333
+    m_Target: 77.01862
     speed: 2
-    m_Value: 252.32333
+    m_Value: 73.702034
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -813,6 +813,7 @@ MonoBehaviour:
     - {fileID: -4908117063871510441, guid: bfe8d66f6b332ea468cb8c8917b100e2, type: 2}
     - {fileID: -468854202288461016, guid: 15c8ffe36b11fe34ab1320e1f60ec083, type: 2}
     - {fileID: 4648417647337991218, guid: bb234d9d0108ac146ae1e99fec87c849, type: 2}
+    - {fileID: -3909458656068989466, guid: d234bc4c32d5f1345ab7bdfc34082e1b, type: 2}
     m_ValueSerializationHelper:
     - e00: 0.7978947
       e01: 0
@@ -821,7 +822,7 @@ MonoBehaviour:
       e10: 0
       e11: 0.7978947
       e12: 0
-      e13: 116.23158
+      e13: 116.23159
       e20: 0
       e21: 0
       e22: 1
@@ -942,10 +943,26 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+    - e00: 0.7978947
+      e01: 0
+      e02: 0
+      e03: -24.894714
+      e10: 0
+      e11: 0.7978947
+      e12: 0
+      e13: 132.18948
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 709d6d91ed969aa479f2e471999a60a2, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: d234bc4c32d5f1345ab7bdfc34082e1b, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 3360359203521045781, guid: 709d6d91ed969aa479f2e471999a60a2, type: 2}
+  - m_Target: {fileID: -3909458656068989466, guid: d234bc4c32d5f1345ab7bdfc34082e1b, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -988,7 +1005,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 106142
+  m_LastSelectedObjectID: -236698
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1055,23 +1072,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 048aedffc289eeff488aeeff629eefffa6bcf0ff9af5f0ffea2df1ffec2df1ffdc4ff1ff3260f1ffb8e4f1ff8c43f2ff9c43f2ff9e43f2ff5c63f2ff487af2ffd27af2ff5c7bf2ffe87bf2ff3c8af2ffb4aaf2ff4cabf2ff9cacf2ff4aadf2ffe0adf2ffd8aef2ffb6b1f2ff7cb9f2ff16baf2ffaebaf2ffd290faffecd3faff74f7fdff0efbffff2e610000346100006c6100007a6100008c61000092610000bc5e0100d6630100066b0100486f0100986f0100a86f0100008901002c910100329101008e910100a6910100149e0100709e0100
+      m_SelectedIDs: 6663fcff
+      m_LastClickedID: -236698
+      m_ExpandedIDs: baa3fcffd0c7fcff3825fefffcf2feff0efbffff58610000f4610000708400008e960000fc9600001497000020970000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Christmas Tree(Clone)
+        m_OriginalName: Christmas Tree(Clone)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -355524
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 10}
       m_SearchString: 
@@ -1126,7 +1143,7 @@ MonoBehaviour:
     m_CachedPref: 151
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 17844
+  m_LastInspectedObjectInstanceID: 17902
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
@@ -1188,7 +1205,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 00560000
     m_LastClickedID: 22016
-    m_ExpandedIDs: 82a0ffffffffffff000000007c6200008062000084620000866200008a620000c26200002a690000c6e2000082330100
+    m_ExpandedIDs: ffffffff0000000036630000606400006264000064640000666400006a6400006c640000ce6400006a8c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1216,21 +1233,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 82a0ffffffffffff000000007c6200008062000084620000866200008a620000c26200002a690000c6e2000082330100
+    m_ExpandedIDs: ffffffff0000000036630000606400006264000064640000666400006a6400006c640000ac6400006a8c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Christmas Tree
+      m_OriginalName: Christmas Tree
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 25124
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 11}
     m_SearchString: 

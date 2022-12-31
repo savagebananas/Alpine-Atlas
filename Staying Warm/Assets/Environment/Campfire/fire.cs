@@ -6,8 +6,8 @@ public class fire : MonoBehaviour
 {
     public float healRadius;
     public float healAmount;
-    public bool fireOn;
-    public bool fireUsed;
+    private bool fireOn;
+    private bool fireUsed;
 
     public float fireDuration;
     private float fireTimer = -1f;
@@ -18,6 +18,8 @@ public class fire : MonoBehaviour
     private GameObject player;
 
     public Animator animator;
+
+    private float time = 15;
 
     void Start()
     {
@@ -57,6 +59,7 @@ public class fire : MonoBehaviour
         }
 
         FireHeal();
+        ResetFire();
     }
 
     void FireHeal()
@@ -89,6 +92,25 @@ public class fire : MonoBehaviour
             animator.SetFloat("Float", 3);
         }
     }
+
+    void ResetFire()
+    {
+        if (time > 0) 
+        {
+            time -= Time.deltaTime;
+            Debug.Log((int)time);
+        }
+        else
+        {
+            Debug.Log("reset fire");
+            fireUsed = false;
+            animator.SetBool("FireUsed", false);
+            time = 15; //set to 500
+        }
+
+
+    }
+
 
     private void OnDrawGizmosSelected()
     {
