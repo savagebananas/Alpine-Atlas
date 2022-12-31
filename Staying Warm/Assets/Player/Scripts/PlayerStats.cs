@@ -9,7 +9,10 @@ public class PlayerStats : MonoBehaviour
     public float maxTemp;
     public float temp;
     public float tempFallRate;
-
+    
+    public Rigidbody2D rb;
+    public Animator animator;
+    public SpriteRenderer sprite;
     public bool isHurt;
 
     private void Start()
@@ -27,23 +30,37 @@ public class PlayerStats : MonoBehaviour
             tempSlider.value = temp;
 
         }
+
+        if(temp >= maxTemp)
+        {
+            temp = maxTemp;
+        }
     }
 
-    public void Hurt(float damage, Vector2 enemyPosition)
+    public void Hurt(float damage, float knockbackPower, Vector2 attackingColliderToPlayerVector)
     {
-        Debug.Log("Player hurt");
-        temp -= damage;
-        StartCoroutine(Knockback(enemyPosition));
-    }
-
-    IEnumerator Knockback(Vector2 enemyPosition)
-    {
-        this.GetComponent<Rigidbody2D>().AddForce(((Vector2)transform.position - enemyPosition).normalized * 5, ForceMode2D.Impulse);
         isHurt = true;
-        yield return new WaitForSeconds(1f);
-        this.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+        temp -= damage;
+
+        if (temp > 0)
+        { 
+            StartCoroutine(hurtCounter());
+        }
+        else
+        {
+            Debug.Log("Player Dead");
+            //animator.SetTrigger("dead");
+            //knockback(5f, attackingColliderToPlayerVector);
+        }
+    }
+
+    IEnumerator hurtCounter()
+    {
+        animator.SetTrigger("hurt");
+        sprite.color = new Color(0, 255, 255, 160);
+        yield return new WaitForSeconds(0.5f);
+        sprite.color = new Color(255, 255, 255, 255);
+        animator.SetTrigger("isIdle");
         isHurt = false;
     }
-
-    
 }

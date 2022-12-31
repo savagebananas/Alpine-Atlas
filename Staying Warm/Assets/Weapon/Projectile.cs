@@ -28,6 +28,12 @@ public class Projectile : MonoBehaviour
             var particle = Instantiate(impaceEffect, collider.transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
+        if (collider.tag == "Obstacle")
+        {
+            var particle = Instantiate(impaceEffect, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
+
     }
 
     IEnumerator DestroySnowball()

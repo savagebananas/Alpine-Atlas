@@ -18,6 +18,8 @@ public class FollowPlayer : State
 
         speed = enemy.speed;
         attackRange = enemy.attackRange;
+
+        //enemy.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
     }
 
     public override void OnUpdate()

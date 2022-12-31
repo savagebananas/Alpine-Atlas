@@ -10,7 +10,7 @@ public class Attack : State
 
     private float attackDelay;
     private float damage;
-    private float power;
+    public float power;
     private float attackRange;
 
     public float enemyToPlayerDistance;
@@ -51,7 +51,7 @@ public class Attack : State
 
         if (enemyToPlayerDistance <= attackRange && !playerIsHurt)
         {
-            player.Hurt(damage, enemy.transform.position);
+            player.Hurt(damage, power, player.transform.position - enemy.transform.position);
             StartCoroutine(AttackDelay()); //calls the attack again after hitting player
         }
 
