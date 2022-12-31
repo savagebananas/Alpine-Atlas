@@ -8,6 +8,8 @@ public class PlayerShoot : MonoBehaviour
     public GameObject firePoint;
     public float power;
 
+    public AudioManager audioManager;
+
     void Start()
     {
         
@@ -29,6 +31,8 @@ public class PlayerShoot : MonoBehaviour
 
         GameObject snowball = Instantiate(projectile, transform.position, Quaternion.Euler(0, 0, playerToCursorAngle));
         snowball.GetComponent<Rigidbody2D>().AddForce(playerToCursorVector.normalized * power, ForceMode2D.Impulse);
+
+        audioManager.PlaySound("Shoot");
     }
 
 }

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6180279539389795143}
   - component: {fileID: 8503103936761942703}
+  - component: {fileID: 8435298748101399950}
   m_Layer: 0
   m_Name: props_19
   m_TagString: Untagged
@@ -84,6 +85,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8435298748101399950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3637567126382956900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546d0cc3773e9104e82ba10e6f6cc1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderer: {fileID: 8503103936761942703}
+  offset: 0
+  attachedToPlayer: 0
 --- !u!1 &3730814092682052097
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7272059342975235100}
   - component: {fileID: 307665870474416953}
+  - component: {fileID: 1127412621300449663}
   m_Layer: 0
   m_Name: star
   m_TagString: Untagged
@@ -168,6 +185,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1127412621300449663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3730814092682052097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546d0cc3773e9104e82ba10e6f6cc1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderer: {fileID: 307665870474416953}
+  offset: 0
+  attachedToPlayer: 0
 --- !u!1 &4629304605597248864
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,9 +211,10 @@ GameObject:
   - component: {fileID: 1453850439694505457}
   - component: {fileID: 1351985517738117055}
   - component: {fileID: 3467941566797253575}
+  - component: {fileID: 1535527127154393437}
   m_Layer: 0
   m_Name: Christmas Tree
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -283,6 +316,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.2}
   m_EdgeRadius: 0
+--- !u!114 &1535527127154393437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4629304605597248864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546d0cc3773e9104e82ba10e6f6cc1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderer: {fileID: 1351985517738117055}
+  offset: 0
+  attachedToPlayer: 0
 --- !u!1 &6030855914267873454
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,6 +341,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7626420876580799157}
   - component: {fileID: 2623812795101206166}
+  - component: {fileID: 5577122662432970592}
   m_Layer: 0
   m_Name: props_20
   m_TagString: Untagged
@@ -367,6 +416,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5577122662432970592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6030855914267873454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546d0cc3773e9104e82ba10e6f6cc1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderer: {fileID: 2623812795101206166}
+  offset: 0
+  attachedToPlayer: 0
 --- !u!1 &6144917833042960490
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,6 +441,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4232629216211600010}
   - component: {fileID: 3351063405008147875}
+  - component: {fileID: 3827364374897350949}
   m_Layer: 0
   m_Name: props_23
   m_TagString: Untagged
@@ -451,3 +516,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3827364374897350949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6144917833042960490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546d0cc3773e9104e82ba10e6f6cc1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderer: {fileID: 3351063405008147875}
+  offset: 0
+  attachedToPlayer: 0

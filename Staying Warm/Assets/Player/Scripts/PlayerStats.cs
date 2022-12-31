@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class PlayerStats : MonoBehaviour
     public Animator animator;
     public SpriteRenderer sprite;
     public bool isHurt;
+
+    public Animator transition;
 
     private void Start()
     {
@@ -46,11 +49,9 @@ public class PlayerStats : MonoBehaviour
         { 
             StartCoroutine(hurtCounter());
         }
-        else
+        else //PLAYER DEAD
         {
-            Debug.Log("Player Dead");
-            //animator.SetTrigger("dead");
-            //knockback(5f, attackingColliderToPlayerVector);
+            transition.SetTrigger("FadeOut");
         }
     }
 
