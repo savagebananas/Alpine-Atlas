@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
         if (time == 255)
             canChangeDay = true;
 
-        time += Time.deltaTime;
+        time += Time.deltaTime * 10;
         light.GetComponent<UnityEngine.Rendering.Universal.Light2D>().color = lightColor.Evaluate(time * 0.002f);
     }
 }

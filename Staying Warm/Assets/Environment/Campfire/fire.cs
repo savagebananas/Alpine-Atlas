@@ -19,6 +19,8 @@ public class fire : MonoBehaviour
 
     public Animator animator;
 
+    public GameObject fireLight;
+
     private float time = 15;
 
     void Start()
@@ -34,9 +36,11 @@ public class fire : MonoBehaviour
 
         if (Vector2.Distance(this.transform.position, player.transform.position) <= healRadius && fireUsed == false)
         {
+            Debug.Log("fire ready");
             if (Input.GetKeyDown(KeyCode.E))
             {
                 gameObject.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 255);
+                fireLight.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = 0.5f;
                 fireTimer = fireDuration;
                 animator.SetTrigger("Press");
             }
@@ -56,6 +60,7 @@ public class fire : MonoBehaviour
 
             //Temporary, make new animation for fire dying
             gameObject.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
+            fireLight.GetComponent<UnityEngine.Rendering.Universal.Light2D>().intensity = 0f;
         }
 
         FireHeal();
@@ -98,7 +103,7 @@ public class fire : MonoBehaviour
         if (time > 0) 
         {
             time -= Time.deltaTime;
-            Debug.Log((int)time);
+            //Debug.Log((int)time);
         }
         else
         {
