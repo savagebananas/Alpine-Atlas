@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerShoot : MonoBehaviour
 {
     public GameObject projectile;
+    public GameObject firePoint;
     public float power;
 
     void Start()
