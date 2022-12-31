@@ -6,8 +6,8 @@ public class fire : MonoBehaviour
 {
     public float healRadius;
     public float healAmount;
-    private bool fireOn;
-    private bool fireUsed;
+    public bool fireOn;
+    public bool fireUsed;
 
     public float fireDuration;
     private float fireTimer = -1f;
@@ -19,10 +19,13 @@ public class fire : MonoBehaviour
 
     public Animator animator;
 
+<<<<<<< HEAD
     public GameObject fireLight;
 
     private float time = 15;
 
+=======
+>>>>>>> parent of e7a34eb (Reusable Fire)
     void Start()
     {
         player = GameObject.Find("Player");
@@ -64,7 +67,6 @@ public class fire : MonoBehaviour
         }
 
         FireHeal();
-        ResetFire();
     }
 
     void FireHeal()
@@ -98,6 +100,7 @@ public class fire : MonoBehaviour
         }
     }
 
+<<<<<<< HEAD
     void ResetFire()
     {
         if (time > 0) 
@@ -117,6 +120,8 @@ public class fire : MonoBehaviour
     }
 
 
+=======
+>>>>>>> parent of e7a34eb (Reusable Fire)
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.green;

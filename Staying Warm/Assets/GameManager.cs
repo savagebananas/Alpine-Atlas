@@ -1,8 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class GameManager : MonoBehaviour
 {
@@ -35,7 +34,12 @@ public class GameManager : MonoBehaviour
         if (time == 255)
             canChangeDay = true;
 
+<<<<<<< HEAD
         time += Time.deltaTime * 10;
         light.GetComponent<UnityEngine.Rendering.Universal.Light2D>().color = lightColor.Evaluate(time * 0.002f);
+=======
+        time += Time.deltaTime;
+        light.GetComponent<Light2D>().color = lightColor.Evaluate(time * 0.002f);
+>>>>>>> parent of e7a34eb (Reusable Fire)
     }
 }
