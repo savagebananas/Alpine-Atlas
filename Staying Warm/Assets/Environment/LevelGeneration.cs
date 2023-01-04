@@ -25,6 +25,8 @@ public class LevelGeneration : MonoBehaviour
     public float xSpread;
     public float ySpread;
 
+    private float timer = 20;
+
     void Start()
     {
         for (int i = 0; i < numberOfTrees; i++) PlaceItems(tree);
@@ -41,5 +43,18 @@ public class LevelGeneration : MonoBehaviour
         Vector2 randPos = new Vector2(Random.Range(-xSpread, xSpread), Random.Range(-ySpread, ySpread));
         GameObject clone = Instantiate(o, randPos, Quaternion.identity);
         clone.transform.parent = environmentReference.transform;
+    }
+
+    private void Update()
+    {
+        if(timer > 0)
+        {
+            timer -= Time.deltaTime;
+        }
+        else
+        {
+            PlaceItems(spawner);
+            timer = 10;
+        }
     }
 }

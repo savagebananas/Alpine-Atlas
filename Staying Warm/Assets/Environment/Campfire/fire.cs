@@ -34,11 +34,13 @@ public class fire : MonoBehaviour
 
         if (Vector2.Distance(this.transform.position, player.transform.position) <= healRadius && fireUsed == false)
         {
+            //Debug.Log("Fire Ready");
             if (Input.GetKeyDown(KeyCode.E))
             {
                 gameObject.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 255);
                 fireTimer = fireDuration;
                 animator.SetTrigger("Press");
+                fireUsed = true;
             }
         }
 
@@ -59,7 +61,7 @@ public class fire : MonoBehaviour
         }
 
         FireHeal();
-        ResetFire();
+        //ResetFire();
     }
 
     void FireHeal()
@@ -102,9 +104,8 @@ public class fire : MonoBehaviour
         }
         else
         {
-            Debug.Log("reset fire");
             fireUsed = false;
-            animator.SetBool("FireUsed", false);
+            animator.SetBool("FireReady", false);
             time = 15; //set to 500
         }
 

@@ -18,7 +18,8 @@ public class Spawner : MonoBehaviour
     void Update()
     {
         float distanceToPlayer =  Vector2.Distance(this.transform.position, player.transform.position);
-        if (15 < distanceToPlayer && distanceToPlayer < 30) //spawn only when far from camera but not too far
+
+        if (15 < distanceToPlayer && distanceToPlayer < 40) //spawn only when far from camera but not too far
         {
             if (timer > 0)
             {
@@ -26,10 +27,12 @@ public class Spawner : MonoBehaviour
             }
             else
             {
+                transform.position = new Vector2(Random.Range(-100, 100), Random.Range(-100, 100));        
+
                 Instantiate(enemyPrefab, transform.position, Quaternion.identity);
+            
                 timer = spawnTime;
             }
         }
-
     }
 }

@@ -24,7 +24,7 @@ public class EnemyHurt : State
         animator.SetTrigger("hurt");
         if (enemy.GetComponent<Enemy>().health <= 0) //enemy dead
         {
-            impulse.GenerateImpulse(0.5f);
+            impulse.GenerateImpulse(0.1f);
             Instantiate(explosionParticles, transform.position, transform.rotation);
             yield return new WaitForSeconds(0.2f);
             enemy.GetComponent<SpriteRenderer>().color = new Color(0, 255, 255, 100);

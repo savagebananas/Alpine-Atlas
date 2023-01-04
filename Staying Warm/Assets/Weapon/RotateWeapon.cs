@@ -30,12 +30,12 @@ public class RotateWeapon : MonoBehaviour
         float playerToCursorAngle = Mathf.Atan2(playerToCursorVector.y, playerToCursorVector.x) * Mathf.Rad2Deg;
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        if (mousePos.x < transform.position.x)
+        if (mousePos.x < player.transform.position.x)
         {
             facingRight = false;
             facingLeft = true;
         }
-        if (mousePos.x > transform.position.x)
+        if (mousePos.x > player.transform.position.x)
         {
             facingRight = true;
             facingLeft = false;

@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  speed: 1.5
+  speed: 1.7
   damage: 10
   power: 100
   attackSpeed: 1
