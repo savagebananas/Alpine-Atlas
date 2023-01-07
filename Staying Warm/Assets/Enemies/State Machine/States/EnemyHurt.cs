@@ -27,6 +27,7 @@ public class EnemyHurt : State
             impulse.GenerateImpulse(0.1f);
             Instantiate(explosionParticles, transform.position, transform.rotation);
             yield return new WaitForSeconds(0.2f);
+            Score.scoreValue++;
             enemy.GetComponent<SpriteRenderer>().color = new Color(0, 255, 255, 100);
             Destroy(enemy);
         }
